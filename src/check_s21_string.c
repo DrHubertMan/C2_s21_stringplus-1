@@ -9031,7 +9031,7 @@ START_TEST(trim_26) {
 char str1[] = "123 3 4";
 char str2[] = "1234";
 char *str3 = s21_trim(str1, str2);
-ck_assert_str_eq(str3, "  ");
+ck_assert_str_eq(str3, " 3 ");
 free(str3);
 }
 END_TEST
